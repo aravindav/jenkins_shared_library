@@ -1,3 +1,3 @@
-def call(){
-    sh 'mvn test'
+def call(String mavenGoals = 'clean test') {
+    sh "mvn ${mavenGoals}"
 }
